@@ -4,7 +4,7 @@ A C++ implementation of a Multilayer Perceptron (MLP) neural network using Eigen
 ## Features
 
 - **Customizable Architecture**: You can define the number of layers and the number of neurons per layer.
-- **Multiple Activation Functions**: Supports ReLU, Sigmoid, Tanh, Leaky Relu for non-linearity.
+- **Multiple Activation Functions**: Supports ReLU, Sigmoid, Tanh, Leaky Relu and Softmax for non-linearity.
 - **Loss Functions**: Supports Mean Squared Error (MSE), Binary Cross Entropy and Cross-Entropy loss functions for regression and classification tasks.
 - **Backpropagation**: Implements the backpropagation algorithm for training the network.
 - **Mini-batch Gradient Descent**: Optimizes the network using mini-batch gradient descent, allowing for more efficient training on large datasets.
