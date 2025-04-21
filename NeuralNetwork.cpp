@@ -271,7 +271,7 @@ void NeuralNetwork::backpropagate(const MatrixXd& batch, const MatrixXd& labels,
         layers_errors[l] = (layers_errors[l+1]*weights[l+1]).cwiseProduct(layers_output[l].unaryExpr(func.derivative));
     }
 
-    //runs for each layers's weight matrix
+    //runs for each layer's weight matrix
     for (int l {}; l<weights.size(); ++l){
 
         //if output layer
