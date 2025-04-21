@@ -6,6 +6,7 @@ int main(){
     int num_images_train, rows_train, cols_train, num_labels_train;
     int num_images_test, rows_test, cols_test, num_labels_test;
 
+    //change path to where your MNIST data is 
     MatrixXd train_images = load_mnist_images("MNIST/train-images.idx3-ubyte", num_images_train, rows_train, cols_train);
     MatrixXd test_images = load_mnist_images("MNIST/t10k-images.idx3-ubyte", num_images_test, rows_test, cols_test);
     VectorXd train_labels = load_mnist_labels("MNIST/train-labels.idx1-ubyte", num_labels_train);
