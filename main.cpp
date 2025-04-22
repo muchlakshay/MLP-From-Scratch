@@ -1,7 +1,22 @@
 #include "NeuralNetwork.h"
 #include "load_mnist.h"
+#include "loadcsv.h"
 
 int main(){
+
+//--------------LOAD CSV FILES------------------------
+
+    // Data data {load_csv("filename.csv", "label_column", 0.8)}; //--> change training data ratio from 
+                                                                   // 0.8 to something else if you want
+
+    // MatrixXd X_train {toMatrixXd(data.X_train)};
+    // MatrixXd X_test {toMatrixXd(data.X_test)};
+    // VectorXd Y_train {toVectorXd(data.Y_train)};
+    // VectorXd Y_test {toVectorXd(data.Y_test)};
+
+//you can use toOneHot() to one hot encode the labels
+
+//--------------LOAD MNIST----------------------------
     
     int num_images_train, rows_train, cols_train, num_labels_train;
     int num_images_test, rows_test, cols_test, num_labels_test;
