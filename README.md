@@ -33,7 +33,7 @@ g++  main.cpp NeuralNetwork.cpp -o NN -I/path/to/eigen
 Replace /path/to/eigen with the actual path where Eigen is installed or located.
 
 ## Training
-- The network can be trained on your own dataset. You can define the input data (features) and target data (labels) in the form of Eigen MatrixXd, specify the number of epochs, mini-batch size, and learning rate.
+- The network can be trained on your own dataset. You can define the input data (features) and target data (labels) in the form of Eigen MatrixXd by loading csv data file using "loadcsv.h" header file, specify the number of epochs, mini-batch size, and learning rate.
 ```cpp
 NeuralNetwork mlp({784, 16, 16, 10}, {"relu", "relu", "softmax"});  // 784 input neurons, 2 hidden layer with 16 neurons and 10 output neuron
 mlp.learn(input_data, labels, 1000, 32, 0.01, "cross_entropy_loss", true); // input data, labels, batch size, learning rate, loss function, verbose (true by default)
