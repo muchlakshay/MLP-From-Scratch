@@ -41,4 +41,4 @@ mlp.learn(input_data, labels, 1000, 32, 0.01, "cross_entropy_loss", true); // in
 ## Test Run On MNSIT 
 ![Screenshot 2025-04-22 114559](https://github.com/user-attachments/assets/a934e0be-2e67-4015-aada-24e67a29b6f4)
 
--95% accuracy on MNIST handwritten digit classification with just 20 epochs
+- 95% accuracy on MNIST handwritten digit classification with just 20 epochs
