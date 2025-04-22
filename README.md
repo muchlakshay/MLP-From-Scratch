@@ -38,6 +38,7 @@ Replace /path/to/eigen with the actual path where Eigen is installed or located.
 NeuralNetwork mlp({784, 16, 16, 10}, {"relu", "relu", "softmax"});  // 784 input neurons, 2 hidden layer with 16 neurons and 10 output neuron
 mlp.learn(input_data, labels, 1000, 32, 0.01, "cross_entropy_loss", true); // input data, labels, batch size, learning rate, loss function, verbose (true by default)
 ```
+## Test Run On MNSIT 
+![Screenshot 2025-04-22 114559](https://github.com/user-attachments/assets/a934e0be-2e67-4015-aada-24e67a29b6f4)
 
-
-
+-95% accuracy on MNIST handwritten digit classification with just 20 epochs
