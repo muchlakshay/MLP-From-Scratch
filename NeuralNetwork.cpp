@@ -181,7 +181,7 @@ void NeuralNetwork::feedForward(const MatrixXd& batch){
         return;
     }
 
-    //clear the previous layer outputs (z) and activations (a)
+    //clear the previous batch outputs (z) and activations (a)
     layers_output.clear();
     layers_activations.clear();
 
