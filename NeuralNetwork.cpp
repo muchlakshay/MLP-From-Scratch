@@ -13,7 +13,7 @@ void NeuralNetwork::initialize(const std::vector<int>& layers){
 
         //xavier xavier initialization
         double limit = std::sqrt(6.0 / (in + out));
-        std::uniform_real_distribution dist(-limit, limit); //xavier limit
+        std::uniform_real_distribution<double> dist(-limit, limit); //xavier limit
 
         //Create a matrix of weights according to the layer input and output size
         MatrixXd w(out, in);
